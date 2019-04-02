@@ -105,19 +105,19 @@ const parent = {
   "name": "Susan",
   "age": 70,
   speak: function(name) { 
-    return "Hello, my name is " + parent.name + "!";
+    return "Hello, my name is " + this.name + "!";
   },
   child: {
     "name": "George",
     "age": 50,
     speak: function(name) { 
-      return "Hello, my name is " + parent.child.name + "!";
+      return "Hello, my name is " + this.name + "!";
     },
     grandchild: {
       "name": "Sam",
       "age": 30,
       speak: function(name) { 
-        return "Hello, my name is " + parent.child.grandchild.name + "!";
+        return "Hello, my name is " + this.name + "!";
       },
     }
   }
